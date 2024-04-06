@@ -1,0 +1,109 @@
+.container{
+    background: url('https://pbs.twimg.com/media/GI1aO3yXgAAsw-N?format=jpg&name=4096x4096');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .container-outer{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .about-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container .about-container img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+.container .about-container h3{
+    font-size: 15px;
+}
+.progress-container{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.progress-progress progress{
+    width: 220px;
+    
+}
+.controls-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.controls-container .play-btn{
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 0px 10px;
+}
+.controls-container .prev-next{
+    width: 30px;
+    height: 30px;
+}
+.library{
+    width: 80px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 15px;
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    box-shadow: 2px 2px 2px  white;
+}
+.library:hover{
+    cursor: pointer;
+    background-color:white;
+    color: black;
+    box-shadow: 2px 2px 2px  black;
+}
+.songlist li{
+    list-style-type: none;
+    height: 30px;
+    width: 96%;
+    color: white;
+    padding-left: 10px;
+    padding-top: 4px;
+   
+}
+.songlist li:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.songlist{
+    width: 300px;
+    height: 100vh;
+   
+}
+.about-container h3,h4{
+    text-shadow: 2px 2px 2px white ;
+}@media screen and (max-width: 900px) {
+    .library{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+  }
