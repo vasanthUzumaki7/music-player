@@ -168,6 +168,7 @@ const Player = () => {
                 </div>
                 <button onClick={songlist} className='library'>Library</button>
                 <div style={songliststyle} className='songlist'>
+                            <h1> Songs List</h1>
                 {tracks.map((item,index)=>(
                     <li key={index} onClick={() => playSong(index)}>{item.name}</li>
                 ))}
